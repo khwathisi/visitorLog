@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>
+                    %d | %c: %m%n
+                </pattern>>
+            </PatternLayout>
+        </Console>
+        <File name="file" fileName="logs/errors.log" >
+            <PatternLayout>
+                <pattern>
+                    %d | %c: %m%n
+                </pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="console" level ="debug"/>
+            <AppenderRef ref="file" level="error"/>
+        </Root>
+    </Loggers>
+</Configuration>

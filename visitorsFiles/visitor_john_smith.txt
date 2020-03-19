@@ -1,0 +1,6 @@
+Names: John Smith
+Age: 24
+Visit date: 2020/03/19
+Visit time: 12.54.23
+Comments: Not bad
+Assistant Name: Khwathisi
