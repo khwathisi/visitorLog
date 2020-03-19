@@ -96,6 +96,7 @@ public class Visitor {
             LocalDateTime currentTime = LocalDateTime.now();
 
             //Record the assistant's name
+            String passln = sc.nextLine();
             System.out.println("Welcome assistant, what is your name.?");
             assistantName = sc.nextLine();
 
@@ -125,6 +126,7 @@ public class Visitor {
             }
             catch (IOException e){
                 System.out.println(e.getMessage());
+                logger.error(e.getMessage());
             }
 
         //View a visit
